@@ -1,0 +1,435 @@
+/* COLOR DECLARATION */
+:root {
+  --black: #000;
+  --grey: #1e1d1d;
+  --light-grey: #232323;
+  --white: hsl(0, 0%, 100%);
+  --dark-gray: #232323;
+  --gray: #3d3b3b;
+  --n-gray: #2d2c2c;
+}
+
+/* BODY STRIUCTURE */
+
+body,
+html {
+  height: 100%;
+  margin: 0rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* MAIN CONTAINER */
+
+.container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  background-color: var(--black);
+  padding: 0.5rem;
+}
+
+.sidebar {
+  flex: 0.3;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.5rem;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.top-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--grey);
+  border-radius: 0.5rem;
+}
+.link-flexx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+}
+
+.chip {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5rem;
+  width: fit-content;
+  font-weight: normal;
+  color: var(--white);
+}
+.chips {
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bold;
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.chips:hover {
+  color: var(--white);
+  background-color: var(--gray);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  background-color: var(--grey);
+  z-index: 1000;
+}
+
+.link-flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.link-flex:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.link-flex img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.link-flex p {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.sport-flex img {
+  width: 6em;
+  height: 2em;
+}
+
+.library {
+  border-radius: 0.5rem;
+  flex: 3;
+  overflow-y: auto;
+  background-color: var(--grey);
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.aob {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-tops {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-top p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.flex-top p:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.flex-top img:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.flex-show {
+  background-color: var(--gray);
+  border-radius: 0.3rem;
+  padding: 0.1em 0.5em;
+  color: var(--white);
+  line-height: 0.7em;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.flex-show p {
+  line-height: 15px;
+}
+.engg {
+  border: 1px solid var(--white);
+  border-radius: 51em;
+  padding: 0.5rem;
+  display: flex;
+  width: 8em;
+  justify-content: space-around;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-container {
+  width: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+  height: 50px;
+}
+
+.main-content {
+  flex: 0.8;
+  overflow-y: auto;
+  background-color: var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding-bottom: 6rem;
+}
+.main-contents {
+  padding: 0rem 1rem;
+}
+
+.album-flex {
+  margin-bottom: 1rem !important;
+}
+
+.albums {
+  margin-top: 1rem;
+}
+
+.album-cover {
+  height: 3rem !important;
+  width: 3rem !important;
+  border-radius: 0.2rem;
+}
+
+.col-flex p {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.album-name {
+  color: var(--white);
+  margin-bottom: 0.35rem !important;
+  font-size: 1rem !important;
+}
+
+.cards-container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+  background-color: var(--n-gray);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  height: fit-content;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.35rem;
+}
+
+.card-name {
+  margin: 0.25rem 0;
+}
+
+.card-description {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.preview {
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  display: flex;
+  padding: 0px 15px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+.text {
+  line-height: 0.5em;
+}
+.preview h6 {
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.preview p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+}
+.preview button {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.preview button:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+/* For screens smaller than 600px (e.g., smartphones) */
+@media (max-width: 600px) {
+  /* Adjustments to the body and HTML */
+  body,
+  html {
+    overflow: auto; /* Allow scrolling */
+    display: block;
+  }
+
+  /* Adjustments to the container */
+  .container {
+    display: block;
+    padding: 0;
+  }
+
+  /* Adjustments to the sidebar */
+  .sidebar {
+    flex: 1;
+    margin-right: 0;
+  }
+
+  /* Adjustments to the main content */
+  .main-content {
+    flex: 1;
+  }
+
+  /* Adjustments to the navbar */
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  /* Adjustments to the links in the navbar */
+  .link-flex {
+    gap: 0.5rem;
+  }
+
+  /* Adjustments to the album cover */
+  .album-cover {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+
+  /* Adjustments to the cards in the card container */
+  .card {
+    margin: 0.5rem 0;
+    flex: 1 0 45%;
+  }
+
+  /* Adjustments to the preview section */
+  .preview {
+    padding: 0.5rem;
+    justify-content: center;
+  }
+
+  /* Adjustments to the preview button */
+  .preview button {
+    padding: 10px 20px;
+  }
+}
+
+/* For screens smaller than 900px (e.g., tablets) */
+@media (max-width: 900px) {
+  /* Adjustments to the sidebar */
+  .sidebar {
+    flex: 0.5;
+  }
+
+  /* Adjustments to the main content */
+  .main-content {
+    flex: 1.5;
+  }
+}
+
+/* For screens smaller than 900px (e.g., tablets) */
+@media (max-width: 600px) {
+  /* Adjustments to the sidebar */
+  .sidebar {
+    flex: 0.4;
+  }
+
+  /* Adjustments to the main content */
+  .main-content {
+    flex: 1.6;
+  }
+
+  /* Adjustments to the navbar */
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  /* Adjustments to the links in the navbar */
+  .link-flex {
+    gap: 0.5rem;
+  }
+
+  /* Adjustments to the album cover */
+  .album-cover {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+
+  /* Adjustments to the cards in the card container */
+  .card {
+    margin: 0.5rem 0;
+    flex: 1 0 30%;
+  }
+
+  /* Adjustments to the preview section */
+  .preview {
+    padding: 0.5rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* Adjustments to the preview button */
+  .preview button {
+    padding: 10px 20px;
+  }
+}
